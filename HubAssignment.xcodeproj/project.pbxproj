@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244FA12121F0AE3600931091 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244FA12021F0AE3600931091 /* ApplicationAssembly.swift */; };
+		2494DCB821F0F4CE005860C0 /* URL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2494DCB721F0F4CE005860C0 /* URL.plist */; };
+		2494DCBB21F0F5EB005860C0 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCBA21F0F5EB005860C0 /* Utility.swift */; };
+		2494DCBD21F0FDC5005860C0 /* Dictionary+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCBC21F0FDC5005860C0 /* Dictionary+Map.swift */; };
+		2494DCBF21F10664005860C0 /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCBE21F10664005860C0 /* ForecastService.swift */; };
+		2494DCC121F10670005860C0 /* ForecastServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCC021F10670005860C0 /* ForecastServiceWrapper.swift */; };
+		2494DCC421F10761005860C0 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCC321F10761005860C0 /* Metrics.swift */; };
+		2494DCC721F1BB41005860C0 /* HubAssignmentDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCC521F1BB41005860C0 /* HubAssignmentDB.xcdatamodeld */; };
+		2494DCCF21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCCD21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataProperties.swift */; };
+		2494DCD021F1BD1E005860C0 /* WeatherForcastEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCCE21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataClass.swift */; };
+		2494DCD421F1BE5C005860C0 /* MetricLocationEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCD221F1BE5C005860C0 /* MetricLocationEntity+CoreDataProperties.swift */; };
+		2494DCD521F1BE5C005860C0 /* MetricLocationEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCD321F1BE5C005860C0 /* MetricLocationEntity+CoreDataClass.swift */; };
+		2494DCDD21F2004C005860C0 /* ForecastVCCellManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCDC21F2004C005860C0 /* ForecastVCCellManager.swift */; };
+		2494DCDF21F24A18005860C0 /* CoreNetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCDE21F24A18005860C0 /* CoreNetworkAssembly.swift */; };
+		2494DCE121F24DBF005860C0 /* CoreMemoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2494DCE021F24DBF005860C0 /* CoreMemoryAssembly.swift */; };
 		24B0BE3C21F0A8BF008D5F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B0BE3B21F0A8BF008D5F09 /* AppDelegate.swift */; };
-		24B0BE3E21F0A8BF008D5F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B0BE3D21F0A8BF008D5F09 /* ViewController.swift */; };
+		24B0BE3E21F0A8BF008D5F09 /* ForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B0BE3D21F0A8BF008D5F09 /* ForecastVC.swift */; };
 		24B0BE4121F0A8BF008D5F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B0BE3F21F0A8BF008D5F09 /* Main.storyboard */; };
 		24B0BE4321F0A8BF008D5F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B0BE4221F0A8BF008D5F09 /* Assets.xcassets */; };
 		24B0BE4621F0A8BF008D5F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B0BE4421F0A8BF008D5F09 /* LaunchScreen.storyboard */; };
 		24B0BE5121F0A8C0008D5F09 /* HubAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B0BE5021F0A8C0008D5F09 /* HubAssignmentTests.swift */; };
 		24B0BE5C21F0A8C0008D5F09 /* HubAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B0BE5B21F0A8C0008D5F09 /* HubAssignmentUITests.swift */; };
+		24B0BE7021F0A9B9008D5F09 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B0BE6F21F0A9B9008D5F09 /* CoreDataStack.swift */; };
+		24B0BE7221F0AAAB008D5F09 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B0BE7121F0AAAB008D5F09 /* WeatherForecast.swift */; };
+		24BF1FC621F0B67500BD7069 /* ClientGenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF1FC521F0B67500BD7069 /* ClientGenericService.swift */; };
+		24BF1FC821F0B96400BD7069 /* ClientGenericServiceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF1FC721F0B96400BD7069 /* ClientGenericServiceWrapper.swift */; };
+		35F3F6F40FC53FD558A141D3 /* Pods_HubAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F36A9ADBFDCF8994A714092 /* Pods_HubAssignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +54,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0628DE87BBC1EA927C254E84 /* Pods-HubAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-HubAssignment/Pods-HubAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		244FA12021F0AE3600931091 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		244FA12221F0AE8500931091 /* HubAssignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HubAssignment-Bridging-Header.h"; sourceTree = "<group>"; };
+		2494DCB721F0F4CE005860C0 /* URL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = URL.plist; sourceTree = "<group>"; };
+		2494DCBA21F0F5EB005860C0 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		2494DCBC21F0FDC5005860C0 /* Dictionary+Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Map.swift"; sourceTree = "<group>"; };
+		2494DCBE21F10664005860C0 /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		2494DCC021F10670005860C0 /* ForecastServiceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastServiceWrapper.swift; sourceTree = "<group>"; };
+		2494DCC321F10761005860C0 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		2494DCC621F1BB41005860C0 /* HubAssignmentDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HubAssignmentDB.xcdatamodel; sourceTree = "<group>"; };
+		2494DCCD21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WeatherForcastEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2494DCCE21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WeatherForcastEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2494DCD221F1BE5C005860C0 /* MetricLocationEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MetricLocationEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2494DCD321F1BE5C005860C0 /* MetricLocationEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MetricLocationEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2494DCDC21F2004C005860C0 /* ForecastVCCellManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastVCCellManager.swift; sourceTree = "<group>"; };
+		2494DCDE21F24A18005860C0 /* CoreNetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNetworkAssembly.swift; sourceTree = "<group>"; };
+		2494DCE021F24DBF005860C0 /* CoreMemoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMemoryAssembly.swift; sourceTree = "<group>"; };
 		24B0BE3821F0A8BF008D5F09 /* HubAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B0BE3B21F0A8BF008D5F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24B0BE3D21F0A8BF008D5F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24B0BE3D21F0A8BF008D5F09 /* ForecastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastVC.swift; sourceTree = "<group>"; };
 		24B0BE4021F0A8BF008D5F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24B0BE4221F0A8BF008D5F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24B0BE4521F0A8BF008D5F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +84,12 @@
 		24B0BE5721F0A8C0008D5F09 /* HubAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HubAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B0BE5B21F0A8C0008D5F09 /* HubAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubAssignmentUITests.swift; sourceTree = "<group>"; };
 		24B0BE5D21F0A8C0008D5F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B0BE6F21F0A9B9008D5F09 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		24B0BE7121F0AAAB008D5F09 /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		24BF1FC521F0B67500BD7069 /* ClientGenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGenericService.swift; sourceTree = "<group>"; };
+		24BF1FC721F0B96400BD7069 /* ClientGenericServiceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGenericServiceWrapper.swift; sourceTree = "<group>"; };
+		2C106C719238EC00A2D0B2EF /* Pods-HubAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HubAssignment/Pods-HubAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		6F36A9ADBFDCF8994A714092 /* Pods_HubAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HubAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F3F6F40FC53FD558A141D3 /* Pods_HubAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +118,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		244FA11F21F0AE1700931091 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				244FA12021F0AE3600931091 /* ApplicationAssembly.swift */,
+				2494DCDE21F24A18005860C0 /* CoreNetworkAssembly.swift */,
+				2494DCE021F24DBF005860C0 /* CoreMemoryAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		2494DCB621F0CAB6005860C0 /* GenericService */ = {
+			isa = PBXGroup;
+			children = (
+				24BF1FC521F0B67500BD7069 /* ClientGenericService.swift */,
+				24BF1FC721F0B96400BD7069 /* ClientGenericServiceWrapper.swift */,
+			);
+			path = GenericService;
+			sourceTree = "<group>";
+		};
+		2494DCB921F0F5D3005860C0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2494DCBA21F0F5EB005860C0 /* Utility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2494DCC221F10747005860C0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2494DCC321F10761005860C0 /* Metrics.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2494DCCC21F1BC62005860C0 /* WeatherForcastEntity */ = {
+			isa = PBXGroup;
+			children = (
+				2494DCCE21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataClass.swift */,
+				2494DCCD21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataProperties.swift */,
+			);
+			path = WeatherForcastEntity;
+			sourceTree = "<group>";
+		};
+		2494DCD121F1BD6A005860C0 /* MetricLocationEntity */ = {
+			isa = PBXGroup;
+			children = (
+				2494DCD321F1BE5C005860C0 /* MetricLocationEntity+CoreDataClass.swift */,
+				2494DCD221F1BE5C005860C0 /* MetricLocationEntity+CoreDataProperties.swift */,
+			);
+			path = MetricLocationEntity;
+			sourceTree = "<group>";
+		};
 		24B0BE2F21F0A8BF008D5F09 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +178,9 @@
 				24B0BE4F21F0A8C0008D5F09 /* HubAssignmentTests */,
 				24B0BE5A21F0A8C0008D5F09 /* HubAssignmentUITests */,
 				24B0BE3921F0A8BF008D5F09 /* Products */,
+				85B0D7595E576B2FD36133B5 /* Pods */,
+				5526754DD8707289B00FF58C /* Frameworks */,
+				244FA12221F0AE8500931091 /* HubAssignment-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +197,17 @@
 		24B0BE3A21F0A8BF008D5F09 /* HubAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				2494DCC221F10747005860C0 /* Helper */,
+				2494DCB621F0CAB6005860C0 /* GenericService */,
+				2494DCB921F0F5D3005860C0 /* Utilities */,
+				244FA11F21F0AE1700931091 /* Assembly */,
+				24B0BE6921F0A8D9008D5F09 /* Interface */,
 				24B0BE3B21F0A8BF008D5F09 /* AppDelegate.swift */,
-				24B0BE3D21F0A8BF008D5F09 /* ViewController.swift */,
-				24B0BE3F21F0A8BF008D5F09 /* Main.storyboard */,
 				24B0BE4221F0A8BF008D5F09 /* Assets.xcassets */,
 				24B0BE4421F0A8BF008D5F09 /* LaunchScreen.storyboard */,
 				24B0BE4721F0A8BF008D5F09 /* Info.plist */,
+				2494DCB721F0F4CE005860C0 /* URL.plist */,
+				2494DCBC21F0FDC5005860C0 /* Dictionary+Map.swift */,
 			);
 			path = HubAssignment;
 			sourceTree = "<group>";
@@ -125,6 +230,80 @@
 			path = HubAssignmentUITests;
 			sourceTree = "<group>";
 		};
+		24B0BE6921F0A8D9008D5F09 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				24B0BE6E21F0A97F008D5F09 /* CoreData */,
+				24B0BE6D21F0A909008D5F09 /* Network */,
+				24B0BE6C21F0A902008D5F09 /* Controller */,
+				24B0BE6B21F0A8F7008D5F09 /* View */,
+				24B0BE6A21F0A8EC008D5F09 /* Model */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		24B0BE6A21F0A8EC008D5F09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24B0BE7121F0AAAB008D5F09 /* WeatherForecast.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24B0BE6B21F0A8F7008D5F09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24B0BE3F21F0A8BF008D5F09 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24B0BE6C21F0A902008D5F09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24B0BE3D21F0A8BF008D5F09 /* ForecastVC.swift */,
+				2494DCDC21F2004C005860C0 /* ForecastVCCellManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24B0BE6D21F0A909008D5F09 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2494DCBE21F10664005860C0 /* ForecastService.swift */,
+				2494DCC021F10670005860C0 /* ForecastServiceWrapper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		24B0BE6E21F0A97F008D5F09 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2494DCD121F1BD6A005860C0 /* MetricLocationEntity */,
+				2494DCCC21F1BC62005860C0 /* WeatherForcastEntity */,
+				24B0BE6F21F0A9B9008D5F09 /* CoreDataStack.swift */,
+				2494DCC521F1BB41005860C0 /* HubAssignmentDB.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5526754DD8707289B00FF58C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F36A9ADBFDCF8994A714092 /* Pods_HubAssignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85B0D7595E576B2FD36133B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C106C719238EC00A2D0B2EF /* Pods-HubAssignment.debug.xcconfig */,
+				0628DE87BBC1EA927C254E84 /* Pods-HubAssignment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24B0BE6021F0A8C0008D5F09 /* Build configuration list for PBXNativeTarget "HubAssignment" */;
 			buildPhases = (
+				78C6C9A6824D81A954C26181 /* [CP] Check Pods Manifest.lock */,
 				24B0BE3421F0A8BF008D5F09 /* Sources */,
 				24B0BE3521F0A8BF008D5F09 /* Frameworks */,
 				24B0BE3621F0A8BF008D5F09 /* Resources */,
+				F6A2BD05E6A19C525375605B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +374,7 @@
 				TargetAttributes = {
 					24B0BE3721F0A8BF008D5F09 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					24B0BE4B21F0A8C0008D5F09 = {
@@ -234,6 +416,7 @@
 			files = (
 				24B0BE4621F0A8BF008D5F09 /* LaunchScreen.storyboard in Resources */,
 				24B0BE4321F0A8BF008D5F09 /* Assets.xcassets in Resources */,
+				2494DCB821F0F4CE005860C0 /* URL.plist in Resources */,
 				24B0BE4121F0A8BF008D5F09 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +437,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78C6C9A6824D81A954C26181 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HubAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A2BD05E6A19C525375605B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HubAssignment/Pods-HubAssignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HubAssignment/Pods-HubAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24B0BE3421F0A8BF008D5F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24B0BE3E21F0A8BF008D5F09 /* ViewController.swift in Sources */,
+				2494DCC121F10670005860C0 /* ForecastServiceWrapper.swift in Sources */,
+				2494DCC421F10761005860C0 /* Metrics.swift in Sources */,
+				2494DCBD21F0FDC5005860C0 /* Dictionary+Map.swift in Sources */,
+				2494DCDD21F2004C005860C0 /* ForecastVCCellManager.swift in Sources */,
+				24BF1FC621F0B67500BD7069 /* ClientGenericService.swift in Sources */,
+				2494DCD421F1BE5C005860C0 /* MetricLocationEntity+CoreDataProperties.swift in Sources */,
+				24B0BE7021F0A9B9008D5F09 /* CoreDataStack.swift in Sources */,
+				2494DCCF21F1BD1E005860C0 /* WeatherForcastEntity+CoreDataProperties.swift in Sources */,
+				2494DCD021F1BD1E005860C0 /* WeatherForcastEntity+CoreDataClass.swift in Sources */,
+				2494DCE121F24DBF005860C0 /* CoreMemoryAssembly.swift in Sources */,
+				2494DCBB21F0F5EB005860C0 /* Utility.swift in Sources */,
+				2494DCC721F1BB41005860C0 /* HubAssignmentDB.xcdatamodeld in Sources */,
+				244FA12121F0AE3600931091 /* ApplicationAssembly.swift in Sources */,
+				2494DCD521F1BE5C005860C0 /* MetricLocationEntity+CoreDataClass.swift in Sources */,
+				24B0BE3E21F0A8BF008D5F09 /* ForecastVC.swift in Sources */,
 				24B0BE3C21F0A8BF008D5F09 /* AppDelegate.swift in Sources */,
+				24BF1FC821F0B96400BD7069 /* ClientGenericServiceWrapper.swift in Sources */,
+				2494DCBF21F10664005860C0 /* ForecastService.swift in Sources */,
+				24B0BE7221F0AAAB008D5F09 /* WeatherForecast.swift in Sources */,
+				2494DCDF21F24A18005860C0 /* CoreNetworkAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +664,17 @@
 		};
 		24B0BE6121F0A8C0008D5F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C106C719238EC00A2D0B2EF /* Pods-HubAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HubAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asyed0.HubAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HubAssignment-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,13 +682,16 @@
 		};
 		24B0BE6221F0A8C0008D5F09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0628DE87BBC1EA927C254E84 /* Pods-HubAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HubAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.asyed0.HubAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HubAssignment-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -552,6 +799,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2494DCC521F1BB41005860C0 /* HubAssignmentDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2494DCC621F1BB41005860C0 /* HubAssignmentDB.xcdatamodel */,
+			);
+			currentVersion = 2494DCC621F1BB41005860C0 /* HubAssignmentDB.xcdatamodel */;
+			path = HubAssignmentDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 24B0BE3021F0A8BF008D5F09 /* Project object */;
 }
