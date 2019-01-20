@@ -12,7 +12,7 @@ import CoreData
 
 extension MetricLocationEntity {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<MetricLocationEntity> {
+    @nonobjc public class func fetchRequest1() -> NSFetchRequest<MetricLocationEntity> {
         return NSFetchRequest<MetricLocationEntity>(entityName: "MetricLocationEntity")
     }
 
@@ -36,5 +36,19 @@ extension MetricLocationEntity {
 
     @objc(removeWeatherForcast:)
     @NSManaged public func removeFromWeatherForcast(_ values: NSSet)
+    
+    func addWeatherForecast(_ forecasts: [WeatherForecast]?, into context:NSManagedObjectContext) {
+        guard let forecasts = forecasts else {
+            return
+        }
+        
+        for forecast in forecasts {
+            let value = WeatherForcastEntity(context: context)
+            value.month = Int16(forecast.month)
+            value.value = forecast.value
+            value.year = Int64(forecast.year)
+            addToWeatherForcast(value)
+        }
+    }
 
 }

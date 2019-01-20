@@ -8,6 +8,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--ForecastVC-->
         <scene sceneID="tne-QT-ifu">
@@ -49,10 +54,31 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gh9-GL-Yqg">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloaded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdG-5b-GPv">
+                                        <rect key="frame" x="142" y="15.5" width="90.5" height="19"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77638524769999995" green="0.77651971580000001" blue="0.77637678379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MdG-5b-GPv" firstAttribute="centerX" secondItem="Gh9-GL-Yqg" secondAttribute="centerX" id="LbP-3W-xeQ"/>
+                                    <constraint firstItem="MdG-5b-GPv" firstAttribute="centerY" secondItem="Gh9-GL-Yqg" secondAttribute="centerY" id="RFy-Mz-Nma"/>
+                                    <constraint firstAttribute="height" constant="50" id="WsL-7N-Ax3"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xNG-ts-9WH" secondAttribute="trailing" id="0mH-HJ-1aa"/>
+                            <constraint firstItem="Gh9-GL-Yqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7jD-ao-1Rt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gh9-GL-Yqg" secondAttribute="bottom" id="QOp-pL-oKS"/>
+                            <constraint firstItem="Gh9-GL-Yqg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U5C-DC-iWT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xNG-ts-9WH" secondAttribute="bottom" id="WCx-L9-yPL"/>
                             <constraint firstItem="xNG-ts-9WH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xc0-9H-g7i"/>
                             <constraint firstItem="xNG-ts-9WH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jLn-US-qAv"/>
@@ -61,6 +87,8 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="xNG-ts-9WH" id="luj-tf-3rH"/>
+                        <outlet property="toastView" destination="Gh9-GL-Yqg" id="b6z-FL-4PN"/>
+                        <outlet property="toastViewHeight" destination="WsL-7N-Ax3" id="QQN-5y-s5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -11,6 +11,12 @@ import CoreData
 
 class ForecastVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var toastViewHeight: NSLayoutConstraint! {
+        didSet {
+            toastViewHeight.constant = 0
+        }
+    }
+    @IBOutlet weak var toastView: UIView!
     @objc var forecastServiceWrapper: ForecastServiceWrapper!
     @objc var coreDataStack: CoreDataStack!
     var cellManager: ForecastVCCellManager!
@@ -22,17 +28,38 @@ class ForecastVC: UIViewController {
     }
     
     func downloadAndSaveForecast(for location:Location, and metrics:Metrics) {
-        forecastServiceWrapper.getForeCast(forMetrics: metrics, location: location) { (whether) in
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        forecastServiceWrapper.getForeCast(forMetrics: metrics, location: location) {[weak self] (whether) in
+            guard let strongSelf = self else {
+                return
+            }
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            }
             
-            let entity = NSEntityDescription.entity(forEntityName: "MetricLocationEntity", in: self.coreDataStack.backgroundContext)
-            let metricLocationEntity = MetricLocationEntity(entity: entity!, insertInto: self.coreDataStack.backgroundContext)
-           metricLocationEntity.location = location.rawValue
-           metricLocationEntity.metric = metrics.rawValue
+            let context = strongSelf.coreDataStack.backgroundContext
+            let entity = NSEntityDescription.entity(forEntityName: "MetricLocationEntity", in: context)
+            let metricLocationEntity = MetricLocationEntity(entity: entity!, insertInto: context)
+            metricLocationEntity.location = location.rawValue
+            metricLocationEntity.metric = metrics.rawValue
+            metricLocationEntity.addWeatherForecast(whether, into: context)
+            strongSelf.coreDataStack.saveContext(context)
             
-           metricLocationEntity.weatherForcast = whether
-            self.coreDataStack.saveContext(self.coreDataStack.backgroundContext)
+            strongSelf.showToastView()
         }
     }
+    
+    func showToastView() {
+        DispatchQueue.main.async {
+            self.toastView.isHidden = false
+            UIView.animate(withDuration: 0.25, animations: {
+                self.toastViewHeight.constant = 50
+                self.toastView.layoutIfNeeded()
+            })
+        }
+    }
+    
+    
 }
 
 //MARK:- ForecastVCCellManagerDelegate
