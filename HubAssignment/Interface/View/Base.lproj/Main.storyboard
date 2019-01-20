@@ -8,11 +8,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--ForecastVC-->
         <scene sceneID="tne-QT-ifu">
@@ -57,19 +52,19 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gh9-GL-Yqg">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloaded" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdG-5b-GPv">
-                                        <rect key="frame" x="142" y="15.5" width="90.5" height="19"/>
-                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WU-Fe-gpb">
+                                        <rect key="frame" x="144.5" y="10" width="86" height="30"/>
+                                        <state key="normal" title="Downloaded"/>
+                                        <connections>
+                                            <action selector="printDownloaded:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Igs-nk-B6O"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.77638524769999995" green="0.77651971580000001" blue="0.77637678379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="MdG-5b-GPv" firstAttribute="centerX" secondItem="Gh9-GL-Yqg" secondAttribute="centerX" id="LbP-3W-xeQ"/>
-                                    <constraint firstItem="MdG-5b-GPv" firstAttribute="centerY" secondItem="Gh9-GL-Yqg" secondAttribute="centerY" id="RFy-Mz-Nma"/>
                                     <constraint firstAttribute="height" constant="50" id="WsL-7N-Ax3"/>
+                                    <constraint firstItem="1WU-Fe-gpb" firstAttribute="centerX" secondItem="Gh9-GL-Yqg" secondAttribute="centerX" id="bgX-Jv-dqE"/>
+                                    <constraint firstItem="1WU-Fe-gpb" firstAttribute="centerY" secondItem="Gh9-GL-Yqg" secondAttribute="centerY" id="ufc-PW-sPA"/>
                                 </constraints>
                             </view>
                         </subviews>

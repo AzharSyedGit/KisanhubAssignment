@@ -59,6 +59,34 @@ class ForecastVC: UIViewController {
         }
     }
     
+    @IBAction func printDownloaded(_ sender: Any) {
+      let fetch = MetricLocationEntity.fetchRequest1()
+      fetch.returnsObjectsAsFaults = false
+        
+        do {
+            let results = try self.coreDataStack.viewContext.fetch(fetch) as [MetricLocationEntity]
+            
+            for result in results {
+                print("Location ", result.location)
+                print("metric ", result.metric)
+                if let weatherForcasts = result.weatherForcast {
+                    for forecast in weatherForcasts {
+                        guard let weatherForecastEnity = forecast as? WeatherForcastEntity else {
+                            continue
+                        }
+                        print("month ", weatherForecastEnity.month)
+                        print("year ", weatherForecastEnity.year)
+                        print("value ", weatherForecastEnity.value)
+                    }
+                }
+                
+            }
+           
+        }catch {
+            print(error)
+        }
+      
+    }
     
 }
 
